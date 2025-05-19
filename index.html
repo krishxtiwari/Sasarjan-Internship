@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krish Tiwari - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://images.unsplash.com/photo-1581092918700-5d28c6d83b89?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f1f1f1;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1.2rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00ffe0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00ffe0;
+    }
+
+    .section {
+      background: rgba(0, 0, 0, 0.75);
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ffe0;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .welcome-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00ffe0;
+      box-shadow: 0 0 12px #00ffe0;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    video {
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.9);
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #00ffe0;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .welcome-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Krish Ajay Tiwari</h1>
+      <ul class="nav-links">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#personal">Personal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="section">
+    <h2>Welcome!</h2>
+    <div class="welcome-content">
+      <img src="images/img2.jpg" alt="Your Photo" class="profile-photo" />
+      <div class="intro">
+        <p>Hello! I’m excited to share my journey and goals with you.</p>
+        <video controls width="100%">
+          <source src="assets/intro-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <ul>
+      <li><strong>Name:</strong> Krish Tiwari</li>
+      <li><strong>Location:</strong> Maharashtra, India</li>
+      <li><strong>Education:</strong> B.Tech ECS</li>
+      <li><strong>Languages:</strong> English, Hindi</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Built a website for cybercafe</li>
+      <li>Participated at SIP Hackathon</li>
+      <li>Completed certification in Cyber Security</li>
+    </ul>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="section">
+    <h2>Future Goals</h2>
+    <p>I aim to become a full-stack developer, contribute to open-source, and build tech that improves lives.</p>
+    <ul>
+      <li>Learn React & Next.js</li>
+      <li>Contribute to 3 open-source projects this year</li>
+      <li>Start my own tech blog</li>
+    </ul>
+  </section>
+
+  <!-- Personal Side -->
+  <section id="personal" class="section">
+    <h2>Personal Side</h2>
+    <h3>Hobbies</h3>
+    <p>Reading, Coding, Traveling</p>
+
+    <h3>Role Models</h3>
+    <p><strong>APJ Abdul Kalam</strong> – For his vision and simplicity.</p>
+
+    <h3>Favorite Books, Websites, Startups</h3>
+    <ul>
+      <li><strong>Book:</strong> Atomic Habits</li>
+      <li><strong>Website:</strong> freeCodeCamp.org</li>
+      <li><strong>Startup:</strong> Zerodha – Revolutionizing finance</li>
+    </ul>
+
+    <h3>Volunteering</h3>
+    <p>Volunteered at Bhavans NSS camp to teach kids basic computer skills.</p>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer>
+  <p>Made with ❤️ by Krish Tiwari</p>
+  <p>Connect:
+    <a href="https://www.linkedin.com/in/krish-tiwari-b40983283/" target="_blank">LinkedIn</a> |
+    <a href="mailto:tiwarikrish205@gmail.com">Email</a>
+  </p>
+</footer>
+
